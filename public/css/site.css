@@ -1,0 +1,33 @@
+body{
+    /*padding-top: 5rem;*/
+    /*padding-bottom: 3rem;*/
+}
+
+.but{
+    margin-top: 0.5em;
+    margin-bottom:0.5em;
+    height: 3em;
+}
+
+#pink{
+    background-color: #f39ab8;
+}
+
+.oorange{
+    color: #ff6200;
+}
+
+.form_cake{
+    color: purple;
+}
+
+.home{
+    background-color: #f69393;
+}
+
+.row_card{
+    margin-left: 18em;
+}
+ul{
+    list-style-type: none;
+}
