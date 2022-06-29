@@ -142,7 +142,7 @@ Route::group(['prefix' => '/'], function (){
         'uses' => 'SignController@signout',
         'as' => 'auth.signout'
     ]);
-    Route::get('home/a',[
+    Route::get('home',[
         'uses' => 'NormalController@home',
         'as' => 'auth.home'
     ]);

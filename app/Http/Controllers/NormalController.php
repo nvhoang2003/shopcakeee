@@ -2,12 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Repository\CakeRepos;
+use App\Repository\CategoryRepos;
 use Illuminate\Http\Request;
 
 class NormalController extends Controller
 {
     //
     public function home(){
-        return view('normal.homepage');
+        $event = CategoryRepos::getAllCategory();
+        $cake = CakeRepos::getAllCake();
+        return view('partial.HomeView',
+        [
+            'event'=>$event,
+            'cake'=>$cake
+        ]
+
+        );
     }
 }
