@@ -93,7 +93,7 @@
                 <div class="container-fluid">
 
                     <div class="account-wrap">
-                        <div class="row">
+                        <div class="row ">
                             @include('partial.message')
                             <div class="account-item clearfix js-item-menu name offset-2">
                                 <div class="content ">

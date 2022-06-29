@@ -19,7 +19,9 @@
                 <tr>
 
                     <td>{{$e->eventname}}</td>
-                    <td><img src="{{asset("/storage/images/Category/".$e->image)}}" alt="" height="60" width="90"></td>
+                    <td>
+                        <img src="{{asset("/storage/images/Category/".$e->image)}}" alt="" height="60" width="90" data-toggle="tooltip" data-html="true" title="<image width='250px' height='250px' src='{{asset("/storage/images/Category/".$e->image)}}' />">
+                    </td>
                     <td>{{$e->description}}</td>
                     <td><a type="button" class="btn btn-success btn-sm"
                            href="{{route('Event.edit',['eventid'=>$e->eventid])}}"
