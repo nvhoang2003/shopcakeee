@@ -26,7 +26,7 @@
 
                     <td>
                         <p>{{$c->cakename}}</p>
-                        <img src="{{asset("/storage/images/Cake/".$c->image)}}" alt="" height="100" width="150" class="mt-1">
+                        <img src="{{asset("/storage/images/Cake/".$c->image)}}" alt="" height="90" width="120" data-toggle="tooltip" data-html="true" title="<image width='250px' height='250px' src='{{asset("/storage/images/Cake/".$c->image)}}' />">
                         <p>{{$c->price}}</p>
                         <div class="row">
                             <a type="button" class="btn btn-success btn-sm" href="{{route('Cake.edit',['cakeid'=>$c->cakeid])}}">Update</a>
