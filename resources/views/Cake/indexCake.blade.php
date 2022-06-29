@@ -2,7 +2,7 @@
 
 
 @section('main')
-    @include('partial.message')
+
     <div class="container oorange">
         <h1 class="display-4 text-center font-weight_bold ">Cake Index</h1>
         <table class="table">

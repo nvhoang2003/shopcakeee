@@ -18,6 +18,7 @@ class SignController extends Controller
         Session::put('username', $request->input('username'));
         $admin= AdminRepos::getAdminById($request->input('username'));
         Session::put('email', $admin[0]->email);
+        Session::put('contact', $admin[0]->contact);
         return redirect()->route('Cake.index');
     }
 
@@ -58,6 +59,12 @@ class SignController extends Controller
     public function signout(){
         if (Session::has('username')){
             Session::forget('username');
+        }
+        if (Session::has('email')){
+            Session::forget('email');
+        }
+        if (Session::has('contact')){
+            Session::forget('contact');
         }
         return redirect()->action('SignController@login');
     }

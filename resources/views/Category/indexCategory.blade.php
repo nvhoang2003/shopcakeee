@@ -2,7 +2,7 @@
 
 
 @section('main')
-    @include('partial.message')
+
         <h1 class="display-4 text-center font-weight_bold ">Event Index</h1>
         <table class="table table-warning table-hover">
             <thead class="text-dark">

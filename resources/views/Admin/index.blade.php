@@ -1,7 +1,7 @@
 @extends('master.masterpage')
 
 @section('main')
-    @include('partial.message')
+
     <div class="container text-center font-weight_bold oorange">
         <h1 class="display-4">Admin Index</h1>
 
