@@ -1,7 +1,6 @@
 @extends('master.masterpage')
 
 @section('main')
-    <div class="container">
         <h1 class="display-4 text-center font-weight_bold">New Event</h1>
 
         @include('partial.error')
@@ -27,6 +26,4 @@
             <a href="{{route('Event.index')}}" class="btn btn-secondary">Cancel</a>
 
         </form>
-
-    </div>
 @endsection

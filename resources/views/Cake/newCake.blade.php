@@ -10,22 +10,22 @@
       @csrf
       <div class="form-group">
         <label for="cakename" class="font-weight-bold">Cakename</label>
-        <input type="text" class="form-control" id="cakename" name="cakename" value="{{old('cakename')?? $cake->cakename}}">
+        <input type="text" class="form-control" id="cakename" name="cakename" value="{{old('cakename')}}">
       </div>
 
       <div class="form-group">
         <label for="flavor" class="font-weight-bold">Flavor</label>
-        <input type="text" class="form-control" id="flavor" name="flavor" value="{{old('flavor')?? $cake->flavor}}">
+        <input type="text" class="form-control" id="flavor" name="flavor" value="{{old('flavor')}}">
       </div>
 
       <div class="form-group">
         <label for="price" class="font-weight-bold">Price</label>
-        <input type="text" class="form-control" id="price" name="price" value="{{old('price')?? $cake->price}}">
+        <input type="text" class="form-control" id="price" name="price" value="{{old('price')}}">
       </div>
 
       <div class="form-group">
         <label for="expiry" class="font-weight-bold">Expiry</label>
-        <input type="text" class="form-control" id="expiry" name="expiry" value="{{old('expiry')?? $cake->expiry}}">
+        <input type="text" class="form-control" id="expiry" name="expiry" value="{{old('expiry')}}">
       </div>
 
       <div class="form-group">
@@ -35,7 +35,7 @@
 
       <div class="form-group">
         <label for="size" class="font-weight-bold">Size</label>
-        <input type="text" class="form-control" id="size" name="size" value="{{old('size')?? $cake->size}}">
+        <input type="text" class="form-control" id="size" name="size" value="{{old('size')}}">
       </div>
       @php
         $cakeid =old('event')?? $cake->event?? null;
