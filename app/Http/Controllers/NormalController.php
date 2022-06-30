@@ -12,7 +12,7 @@ class NormalController extends Controller
     public function home(){
         $event = CategoryRepos::getAllCategory();
         $cake = CakeRepos::getAllCake();
-        return view('partial.HomeView',
+        return view('normal.HomeView',
         [
             'event'=>$event,
             'cake'=>$cake
