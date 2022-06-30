@@ -80,4 +80,13 @@ class CakeRepos
         $sql .= 'where e.eventid = ?';
         return DB::select($sql, [$eventid]);
     }
+
+    public static function getCakeBySearch($search){
+
+        $sql= 'select c.* ';
+        $sql .= 'from cake as c ';
+        $sql .= "where c.cakename like ? ";
+        return DB::select($sql, ['%'.$search.'%']);
+
+    }
 }

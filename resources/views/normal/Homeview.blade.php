@@ -5,40 +5,11 @@
 <section class="hero">
     <div class="hero__slider owl-carousel">
         <div class="hero__item set-bg" data-setbg="{{asset('img/hero/hero-1.jpg')}}">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="hero__text">
-                            <h2>Making your life sweeter one bite at a time!</h2>
-                            <a href="#" class="primary-btn">Our cakes</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-        <div class="hero__item set-bg" data-setbg="{{asset('img/class/class-1.jpg')}}">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="hero__text">
-                            <h2>Making your life sweeter one bite at a time!</h2>
-                            <a href="#" class="primary-btn">Our cakes</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="hero__item set-bg" data-setbg="{{asset('img/shop/details/product-big-1.jpg')}}">
+
         </div>
-        <div class="hero__item set-bg" data-setbg="{{asset('img/class/class-2.jpg')}}">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="hero__text">
-                            <h2>Making your life sweeter one bite at a time!</h2>
-                            <a href="#" class="primary-btn">Our cakes</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="hero__item set-bg" data-setbg="{{asset('img/class-video.jpg')}}">
         </div>
     </div>
 </section>
@@ -64,19 +35,10 @@
     </div>
 </div>
 {{--<!-- Categories Section End -->--}}
-
-{{--<!-- Product Section Begin -->--}}
-<section class="product spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="product__item">
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<div class="mt-5 mb-5 p-5" style="background-color: #ff6a00">
+    <p class="display-4 font-weight-bold text-light text-center">History Of CakeShop</p>
+    <p class="display-5 font-weight-bold text-light" > My family has been making cakes for three generations. My grandfather left his hometown to go to the city to settle down. With his efforts, he built a cake shop. After that, he passed on the baking experience to my father. After many failures, the cake shop has finally become a big force in the baking world. However, with the development of technology, we are forced to change to adapt to the times. Thus the DcakeShop website was born.</p>
+</div>
 @endsection
 
 

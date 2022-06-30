@@ -1,15 +1,14 @@
 @extends('master.clientmasterpage')
 
 @section('main')
+    <h1 class="text-center">Your text :{{$search}}</h1>
 
-    <div class="container oorange">
-        <h1 class="display-4 text-center font-weight_bold ">Cake with Event </h1>
-        <table class="table">
-            <tbody>
-            @php
-                $n=0;
-            @endphp
-            @foreach($cake1 as $c )
+    <table class="table">
+        <tbody>
+        @php
+            $n=0;
+        @endphp
+            @foreach($cake as $c )
                 @php
                     $c->price = number_format($c->price, 0, ',', '.');
                     $c->price .= "VND";
@@ -37,16 +36,15 @@
 
                 </td>
                 @php
-                    if($n %3 ==2){
-                    echo '</tr>';
-                    }
-                    $n +=1;
+                        if($n %3 ==2){
+                        echo '</tr>';
+                        }
+                        $n +=1;
                 @endphp
             @endforeach
 
-            </tbody>
-        </table>
-    </div>
+        </tbody>
+    </table>
 
 
 @endsection
@@ -56,4 +54,3 @@
 
 @section('script')
 @endsection
-

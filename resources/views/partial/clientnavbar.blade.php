@@ -25,6 +25,7 @@
                             <a href="./index.html"><img src="{{asset('/storage/images/logo/'.'logo.png')}}" alt="" height="60" width="90" style="border-radius: 50%">
                             </a>
                         </div>
+
                         <div class="header__top__right">
                             <div class="header__top__right__links">
                                 <a href="#" class="search-switch"><img src="{{asset('img/icon/search.png')}}" alt=""></a>
@@ -58,8 +59,13 @@
 <div class="search-model">
     <div class="h-100 d-flex align-items-center justify-content-center">
         <div class="search-close-switch">+</div>
-        <form class="search-model-form">
-            <input type="text" id="search-input" placeholder="Search here.....">
+        <form class="search-model-form" action="{{route('Client.search')}}" method="get">
+            @csrf
+            <input type="text" id="search-input" name="search" placeholder="Search here.....">
+            <button class="btn au-btn--submit">Submit</button>
         </form>
     </div>
 </div>
+
+@include('partial.error')
+

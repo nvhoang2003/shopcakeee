@@ -40,7 +40,7 @@ class AdminController extends Controller
                         if($key != 1){
                             $fail('Wrong Pass. Please Enter Correct Password!!');
                         }
-                    },
+                    }
                 ],
                 'email' => ['required']
 

@@ -156,3 +156,21 @@ Route::group(['prefix' => '/'], function (){
     ]);
 });
 
+Route::group(['prefix' => 'client'], function (){
+    Route::get('home',[
+        'uses' => 'NormalController@home',
+        'as' => 'auth.home'
+    ]);
+    Route::get('CategoryView',[
+        'uses'=>'NormalController@Categoryview',
+        'as'=>'View.Category'
+    ]);
+    Route::get('CakeWithEvent/{eventid}',[
+        'uses'=>'NormalController@CakeWithEvent',
+        'as'=>'Cake.Event'
+    ]);
+    Route::get('search',[
+        'uses' => 'NormalController@search',
+        'as' => 'Client.search'
+    ]);
+});

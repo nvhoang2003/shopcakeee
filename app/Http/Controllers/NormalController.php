@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Repository\AdminRepos;
 use App\Repository\CakeRepos;
 use App\Repository\CategoryRepos;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use function PHPUnit\Framework\countOf;
 
 class NormalController extends Controller
 {
@@ -36,5 +39,38 @@ class NormalController extends Controller
                 ]);
             }
         }
+    }
+
+    public function search(request $request){
+        $this->formValidate($request)->validate();
+//        dd($request->all());
+        $search = $request->search;
+        $cake = CakeRepos::getCakeBySearch($search);
+//        dd(count($cake));
+        return view('normal.cakeSearch',[
+                'cake'=> $cake,
+                'search'=> $search
+            ]
+        );
+    }
+    function formValidate (Request $request){
+        return Validator::make(
+            $request ->all(),
+            [
+                'search' => ['required',
+                    function($attribute, $value , $fail){
+                        global $request;
+                        $search = $request->search;
+                        $cake = CakeRepos::getCakeBySearch($search);
+                        if(count($cake)==0){
+                            $fail('Sorry! No Information. Please Enter the different text');
+                        }
+                    }
+                    ],
+            ],
+            [
+                'search.required'=>'You cannot leave the search field blank '
+            ]
+        );
     }
 }
