@@ -17,11 +17,11 @@
                             $c->expiry .= " days";
                         }
                     @endphp
-{{--                    @php--}}
-{{--                        if($c->cakeid %3 ==1){--}}
-{{--                        echo '<tr>';--}}
-{{--                        }--}}
-{{--                    @endphp--}}
+                    @php
+                        if($c->cakeid %2 ==1){
+                        echo '<tr>';
+                        }
+                    @endphp
 
                     <td>
                         <p>{{$c->cakename}}</p>
@@ -33,7 +33,7 @@
                         </div>
                     </td>
                     @php
-                        if($c->cakeid %3 ==0){
+                        if($c->cakeid %2 ==0){
                         echo '</tr>';
                         }
                     @endphp
