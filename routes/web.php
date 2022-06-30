@@ -146,5 +146,13 @@ Route::group(['prefix' => '/'], function (){
         'uses' => 'NormalController@home',
         'as' => 'auth.home'
     ]);
+    Route::get('CategoryView',[
+        'uses'=>'NormalController@Categoryview',
+        'as'=>'View.Category'
+    ]);
+    Route::get('CakeWithEvent/{eventid}',[
+        'uses'=>'NormalController@CakeWithEvent',
+        'as'=>'Cake.Event'
+    ]);
 });
 

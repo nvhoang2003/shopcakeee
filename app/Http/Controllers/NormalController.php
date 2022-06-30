@@ -16,8 +16,25 @@ class NormalController extends Controller
         [
             'event'=>$event,
             'cake'=>$cake
-        ]
+        ]);
+    }
+    public function Categoryview(){
+        $event=CategoryRepos::getAllCategory();
 
-        );
+        return view('normal.Categoryview',
+        [
+            'event'=>$event
+        ]);
+    }
+    public function CakeWithEvent($eventid){
+        $cake = CakeRepos::getAllCake();
+        foreach ($cake as $c){
+            if($c->event == $eventid){
+                $cake1= CakeRepos::getCakeByEventid($eventid);
+                return view('normal.CakeWithEvent',[
+                    'cake1'=>$cake1
+                ]);
+            }
+        }
     }
 }

@@ -71,4 +71,13 @@ class CakeRepos
 
         DB::update($sql, [$cake->cakename, $cake->flavor, $cake->price, $cake->expiry, $cake->size, $cake->event, $cake->cakeid]);
     }
+
+    public static function getCakeByEventid($eventid)
+    {
+        $sql= 'select c.* ';
+        $sql .= 'from cake as c ';
+        $sql .= 'join event as e on c.event= e.eventid ';
+        $sql .= 'where e.eventid = ?';
+        return DB::select($sql, [$eventid]);
+    }
 }
