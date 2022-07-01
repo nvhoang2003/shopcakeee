@@ -1,8 +1,8 @@
 <!-- MENU SIDEBAR-->
-<aside class="menu-sidebar d-none d-lg-block">
-    <div class="logo">
+<aside class="menu-sidebar d-none d-lg-block bg-light">
+    <div class="logo bg-white">
         <a href="#">
-            {{--                <img src="images/icon/logo.png" alt="Cool Admin" />--}}
+            <img src="{{asset('/storage/images/logo/'.'dackeshop.png')}}" alt="" class="mb-1" height="120" width="120" />
         </a>
     </div>
     <div class="menu-sidebar__content js-scrollbar1">
@@ -11,14 +11,14 @@
                 <li>
                     <a class="js-arrow" href="#">
                         <i class="fas fa-birthday-cake"></i>Cake</a>
-                    <ul class="list-unstyled navbar__sub-list js-sub-list">
-                        <li>
-                            <a href="{{route('Cake.index')}}">View Cake</a>
-                        </li>
-                        <li>
-                            <a href="{{route('Cake.create')}}">New Cake</a>
-                        </li>
-                    </ul>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="{{route('Cake.index')}}">View Cake</a>
+                            </li>
+                            <li>
+                                <a href="{{route('Cake.create')}}">New Cake</a>
+                            </li>
+                        </ul>
                 </li>
                 <li>
                     <a class="js-arrow" href="#">
@@ -40,45 +40,57 @@
                     <a href="{{route('Cus.index')}}">
                         <i class="fas fa-users"></i>View Customer</a>
                 </li>
-            </ul>
-        </nav>
-    </div>
+                <li>
+                    <a class="js-arrow" href="#">
+                        <i class="fas fa-user-circle"></i>{{\Illuminate\Support\Facades\Session::has('username')?
+                  \Illuminate\Support\Facades\Session::get('username') : ''}}</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                 <a href="#"><span class="email">{{\Illuminate\Support\Facades\Session::has('email')?
+                \Illuminate\Support\Facades\Session::get('email') : ''}}</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="contact">{{\Illuminate\Support\Facades\Session::has('contact')?
+                \Illuminate\Support\Facades\Session::get('contact') : ''}}</span></a>
+                            </li>
+                            <li>
+                                <a href="{{route('auth.signout')}}">
+                                    <i class="fas fa-power-off"></i>Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    {{--            <div class="header-wrap">--}}
+{{--                <div class="account-wrap">--}}
+{{--                    <div class="account-item clearfix js-item-menu">--}}
+{{--                        <div class="content">--}}
+{{--                            <a class="js-acc-btn name" href="#">{{\Illuminate\Support\Facades\Session::has('username')?--}}
+{{--                \Illuminate\Support\Facades\Session::get('username') : ''}}</a>--}}
+{{--                        </div>--}}
+{{--                        <div class="account-dropdown js-dropdown">--}}
+{{--                            <div class="info clearfix ">--}}
+
+{{--                            </div>--}}
+{{--                            <div class="info clearfix ">--}}
+
+{{--                            </div>--}}
+{{--                            <div class="account-dropdown__footer">--}}
+
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 </aside>
 <!-- END MENU SIDEBAR-->
 
 <!-- PAGE CONTAINER-->
-<div class="page-container">
-    <!-- HEADER DESKTOP-->
-    <header class="header-desktop">
-        <div class="section__content section__content--p30">
-            <div class="container-fluid">
-                <div class="header-wrap">
-                    @include('partial.message')
-                        <div class="account-wrap  offset-2">
-                            <div class="account-item clearfix js-item-menu">
-                                <div class="content">
-                                    <a class="js-acc-btn name" href="#">{{\Illuminate\Support\Facades\Session::has('username')?
-                \Illuminate\Support\Facades\Session::get('username') : ''}}</a>
-                                </div>
-                                <div class="account-dropdown js-dropdown">
-                                    <div class="info clearfix ">
-                                            <span class="email">{{\Illuminate\Support\Facades\Session::has('email')?
-                \Illuminate\Support\Facades\Session::get('email') : ''}}</span>
-                                    </div>
-                                    <div class="info clearfix ">
-                                            <span class="contact">{{\Illuminate\Support\Facades\Session::has('contact')?
-                \Illuminate\Support\Facades\Session::get('contact') : ''}}</span>
-                                    </div>
-                                    <div class="account-dropdown__footer">
-                                        <a href="{{route('auth.signout')}}">
-                                            <i class="zmdi zmdi-power"></i>Logout</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </header>
-    <!-- HEADER DESKTOP-->
-</div>
+{{--<div class="page-container">--}}
+{{--    <!-- HEADER DESKTOP-->--}}
+{{--    <header class="header-desktop">--}}
+
+{{--    </header>--}}
+{{--    <!-- HEADER DESKTOP-->--}}
+{{--</div>--}}

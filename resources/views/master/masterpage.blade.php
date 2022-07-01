@@ -33,9 +33,9 @@
 </head>
 
 <body class="">
-<div class="page-wrapper">
-    @include('partial.sidebar')
-</div>
+
+@include('partial.sidebar')
+
 <div class="offset-3 col-9 mt-5">
     @yield('main')
 </div>

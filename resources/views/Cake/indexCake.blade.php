@@ -23,17 +23,21 @@
                         echo '<tr>';
                         }
                     @endphp
+                    <div class="col-4">
+                        <td>
+                            <p>{{$c->cakename}}</p>
+                            <img src="{{asset("/storage/images/Cake/".$c->image)}}" alt="" height="90" width="120" data-toggle="tooltip" data-html="true" title="<image width='250px' height='250px' src='{{asset("/storage/images/Cake/".$c->image)}}' />">
+                            <p>{{$c->price}}</p>
+                            <div class="row">
 
-                    <td>
-                        <p>{{$c->cakename}}</p>
-                        <img src="{{asset("/storage/images/Cake/".$c->image)}}" alt="" height="90" width="120" data-toggle="tooltip" data-html="true" title="<image width='250px' height='250px' src='{{asset("/storage/images/Cake/".$c->image)}}' />">
-                        <p>{{$c->price}}</p>
-                        <div class="row">
-                            <a type="button" class="btn btn-success btn-sm" href="{{route('Cake.edit',['cakeid'=>$c->cakeid])}}">Update</a>
-                            <a type="button" class="btn btn-danger btn-sm" href="{{route('Cake.confirm',['cakeid'=>$c->cakeid])}}">Delete</a>
-                            <a type="button" class="btn btn-warning btn-sm" href="{{route('Cake.show',['cakeid'=>$c->cakeid])}}"> Show </a>
-                        </div>
-                    </td>
+                                <a type="button" class="btn btn-success btn-sm col-3" href="{{route('Cake.edit',['cakeid'=>$c->cakeid])}}"><i class="fas fa-pen-square"></i></a>
+                                <a type="button" class="btn btn-danger btn-sm col-3" href="{{route('Cake.confirm',['cakeid'=>$c->cakeid])}}"><i class="fas fa-trash"></i></a>
+                                <a type="button" class="btn btn-warning btn-sm col-3" href="{{route('Cake.show',['cakeid'=>$c->cakeid])}}"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </td>
+                    </div>
+
+
                     @php
                         if($c->cakeid %3 ==0){
                         echo '</tr>';

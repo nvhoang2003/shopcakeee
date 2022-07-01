@@ -25,7 +25,7 @@
 
                     <td><a type="button" class="btn btn-primary btn-sm"
                            href="{{route('Admin.edit', ['username' => $a->username])}}"
-                        >Edit</a>
+                        ><i class="fal fa-pen-square"></i></a>
                     </td>
                 </tr>
             @endforeach
