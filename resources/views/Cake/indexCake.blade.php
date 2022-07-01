@@ -29,10 +29,9 @@
                             <img src="{{asset("/storage/images/Cake/".$c->image)}}" alt="" height="90" width="120" data-toggle="tooltip" data-html="true" title="<image width='250px' height='250px' src='{{asset("/storage/images/Cake/".$c->image)}}' />">
                             <p>{{$c->price}}</p>
                             <div class="row">
-
-                                <a type="button" class="btn btn-success btn-sm col-3" href="{{route('Cake.edit',['cakeid'=>$c->cakeid])}}"><i class="fas fa-pen-square"></i></a>
-                                <a type="button" class="btn btn-danger btn-sm col-3" href="{{route('Cake.confirm',['cakeid'=>$c->cakeid])}}"><i class="fas fa-trash"></i></a>
-                                <a type="button" class="btn btn-warning btn-sm col-3" href="{{route('Cake.show',['cakeid'=>$c->cakeid])}}"><i class="fas fa-eye"></i></a>
+                                <a type="button" class="btn btn-success btn-sm col-2 m-1" href="{{route('Cake.edit',['cakeid'=>$c->cakeid])}}"><i class="fas fa-edit"></i></a>
+                                <a type="button" class="btn btn-danger btn-sm col-2 m-1" href="{{route('Cake.confirm',['cakeid'=>$c->cakeid])}}"><i class="fas fa-trash"></i></a>
+                                <a type="button" class="btn btn-secondary btn-sm col-2 m-1" href="{{route('Cake.show',['cakeid'=>$c->cakeid])}}"><i class="fas fa-eye"></i></a>
                             </div>
                         </td>
                     </div>
