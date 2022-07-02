@@ -7,7 +7,7 @@
 
 
     <!-- Title Page-->
-    <title>Dashboard</title>
+    <title>Admin</title>
 
     <!-- Fontfaces CSS-->
     <link href="{{asset('css/font-face.css')}}" rel="stylesheet" media="all">

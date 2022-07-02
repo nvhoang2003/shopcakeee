@@ -2,25 +2,28 @@
 
 @section('main')
 <!-- Hero Section Begin -->
-<section class="hero">
+<section class="hero container">
     <div class="hero__slider owl-carousel">
-        <div class="hero__item set-bg" data-setbg="{{asset('img/hero/hero-1.jpg')}}">
+        <div class="" >
+            <img src="{{asset('img/hero/hero-1.jpg')}}" height="470px" alt="">
         </div>
-        <div class="hero__item set-bg" data-setbg="{{asset('img/shop/details/product-big-1.jpg')}}">
-
+        <div class="">
+            <img src="{{asset('img/carousel3.jpg')}}" height="470px" alt="">
         </div>
-        <div class="hero__item set-bg" data-setbg="{{asset('img/class-video.jpg')}}">
+        <div class="" >
+            <img src="{{asset('img/carousel2.jpg')}}" height="470px" alt="">
         </div>
     </div>
 </section>
-{{--<!-- Hero Section End -->--}}
+<!-- Hero Section End -->
+
 
 <!-- Categories Section Begin -->
 <div class="categories">
     <div class="container">
         <div class="row">
 
-            <div class="categories__slider owl-carousel">
+            <div class="categories__slider owl-carousel" id="event">
                 @foreach($event as $e)
                 <div class="categories__item">
                     <div class="categories__item__icon">

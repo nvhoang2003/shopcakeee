@@ -2,7 +2,7 @@
 <aside class="menu-sidebar d-none d-lg-block bg-light">
     <div class="logo bg-white">
         <a href="#">
-            <img src="{{asset('/storage/images/logo/'.'dackeshop.png')}}" alt="" class="mb-1" height="120" width="120" />
+            <img src="{{asset('/storage/images/logo/'.'logocakeshop.png')}}" alt="" class="mb-1" height="120" width="120" />
         </a>
     </div>
     <div class="menu-sidebar__content js-scrollbar1">
