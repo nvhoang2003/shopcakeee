@@ -50,7 +50,7 @@ class NormalController extends Controller
     }
 
     public function search(request $request){
-        $this->formValidate($request)->validate();
+
 //        dd($request->all());
         $search = $request->search;
         $cake = CakeRepos::getCakeBySearch($search);
@@ -61,24 +61,5 @@ class NormalController extends Controller
             ]
         );
     }
-    function formValidate (Request $request){
-        return Validator::make(
-            $request ->all(),
-            [
-                'search' => ['required',
-                    function($attribute, $value , $fail){
-                        global $request;
-                        $search = $request->search;
-                        $cake = CakeRepos::getCakeBySearch($search);
-                        if(count($cake)==0){
-                            $fail('Sorry! No Information. Please Enter the different text');
-                        }
-                    }
-                    ],
-            ],
-            [
-                'search.required'=>'You cannot leave the search field blank '
-            ]
-        );
-    }
+
 }
