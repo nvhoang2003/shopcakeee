@@ -33,6 +33,7 @@
 </head>
 
 <body class="">
+@include('partial.message')
 
 @include('partial.sidebar')
 

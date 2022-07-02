@@ -36,10 +36,10 @@
                     </div>
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li> <a href="{{route('auth.home')}}.#event">Home</a></li>
+                            <li> <a href="{{route('auth.home')}}">Home</a></li>
                             <li><a href="./about.html">About</a></li>
                             <li><a href="./shop.html">Shop</a></li>
-                            <li><a href="{{route('auth.home')}}">Event</a>
+                            <li><a href="{{route('auth.home')}}#event">Event</a>
                             <li><a href="./contact.html">Cake</a></li>
                             <li><a href="./contact.html">Contact</a></li>
                             <li><a href="#">Sign up</a></li>
