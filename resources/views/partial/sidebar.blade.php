@@ -46,10 +46,6 @@
                   \Illuminate\Support\Facades\Session::get('username') : ''}}</a>
                         <ul class="list-unstyled navbar__sub-list js-sub-list">
                             <li>
-                                 <a href="#"><span class="email">{{\Illuminate\Support\Facades\Session::has('email')?
-                \Illuminate\Support\Facades\Session::get('email') : ''}}</span></a>
-                            </li>
-                            <li>
                                 <a href="#"><span class="contact">{{\Illuminate\Support\Facades\Session::has('contact')?
                 \Illuminate\Support\Facades\Session::get('contact') : ''}}</span></a>
                             </li>

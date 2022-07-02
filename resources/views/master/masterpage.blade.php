@@ -33,9 +33,12 @@
 </head>
 
 <body class="">
-@include('partial.message')
-
 @include('partial.sidebar')
+
+<div class="offset-3 col-9">
+    @include('partial.message')
+</div>
+
 
 <div class="offset-3 col-9 mt-5">
     @yield('main')
