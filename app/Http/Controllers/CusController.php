@@ -54,7 +54,7 @@ class CusController extends Controller
                 'dob' => ['required'],
                 'gender'=>['required'],
                 'contact'=>['required','digits:10'],
-                'email'=>['required'],
+                'email'=>['required','email'],
                 'address'=>['required']
             ],
             [
