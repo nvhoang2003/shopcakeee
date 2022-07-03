@@ -173,4 +173,8 @@ Route::group(['prefix' => 'client'], function (){
         'uses' => 'NormalController@search',
         'as' => 'Client.search'
     ]);
+    Route::get('Cakedetail/{cakeid}',[
+       'uses' => 'NormalController@Cakedetail',
+       'as' => 'Client.Cakedetail'
+    ]);
 });

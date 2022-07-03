@@ -32,7 +32,7 @@
                             <img src="{{asset("/storage/images/Cake/".$c->image)}}" alt="" height="90" width="120" data-toggle="tooltip" data-html="true" title="<image width='250px' height='250px' src='{{asset("/storage/images/Cake/".$c->image)}}' />">
                             <p>{{$c->price}}</p>
                             <div class="row">
-                                <a type="button" class="btn btn-warning btn-sm" href="{{route('Cake.show',['cakeid'=>$c->cakeid])}}"> Show </a>
+                                <a type="button" class="btn btn-warning btn-sm" href="{{route('Client.Cakedetail',['cakeid'=>$c->cakeid])}}"> Show </a>
                             </div>
                         </div>
 

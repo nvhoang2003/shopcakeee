@@ -59,7 +59,47 @@ class NormalController extends Controller
                 'cake'=> $cake,
                 'search'=> $search
             ]
+
         );
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public function Cakedetail($cakeid){
+        $cake = CakeRepos::getCakeById($cakeid);
+        $cake1 = CakeRepos::getCakeByEventid($cake[0]->event);
+        return view('normal.cakedetail',[
+            'cake'=> $cake[0],
+            'cake1' => $cake1
+        ]);
     }
 
 }
