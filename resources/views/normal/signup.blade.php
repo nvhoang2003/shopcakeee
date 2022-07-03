@@ -35,7 +35,7 @@
                         <div class="form-group">
                             <label for="gender"> Gender </label><br>
                             <select name="gender" id="gender" class="form-control">
-                                <option value="0">Please Enter Your Gender</option>
+                                <option value="">Please Enter Your Gender</option>
                                 <option value="male"
                                     {{($gender != null && $gender == "male") ? 'selected' : ''}}
                                 >Male</option>
@@ -64,8 +64,8 @@
                             >
                         </div>
                         <div class="text-center mt-3 ">
-                            <button class="au-btn au-btn--block au-btn--green m-b-20"  style=" background-color: #9e9e9e" type="submit">sign up</button>
-                            <button class="au-btn au-btn--block au-btn--green m-b-20" style=" background-color:  #9e9e9e" type="reset">reset</button>
+                            <button class="au-btn au-btn--block au-btn--green m-b-20"  style=" background-color: #222e3c" type="submit">sign up</button>
+                            <button class="au-btn au-btn--block au-btn--green m-b-20" style=" background-color:  #2b3947" type="reset">reset</button>
                         </div>
                     </form>
 
