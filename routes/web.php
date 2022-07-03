@@ -48,11 +48,6 @@ Route::group(['prefix' => 'Cus'], function () {
         'as' => 'Cus.update'
     ]);
 
-    Route::post('create', [
-        'uses' => 'CusController@store',
-        'as' => 'cus.store'
-    ]);
-
 });
 
 Route::group(['prefix' => 'Event'], function () {
@@ -182,6 +177,11 @@ Route::group(['prefix' => 'client'], function (){
     Route::get('signup',[
         'uses' => 'NormalController@signup',
         'as' => 'Client.signup'
+    ]);
+
+    Route::post('signup',[
+        'uses' => 'NormalController@store',
+        'as'=>'Client.store'
     ]);
 
     Route::get('Cakedetail/{cakeid}',[
