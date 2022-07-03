@@ -13,7 +13,7 @@
                             <div class="card-body">
                                 <div class="m-sm-4">
                                     <div class="text-center">
-                                        <img src="{{asset('/storage/images/logo/'.'logocakeshop.jpg')}}" alt="" height="200" width="200" class="img-fluid rounded-circle">
+                                        <img src="{{asset('/storage/images/logo/'.'logocakeshop.png')}}" alt="" height="200" width="200" class="img-fluid rounded-circle">
                                     </div>
                                     <form
                                         action="{{route('Client.store')}}"

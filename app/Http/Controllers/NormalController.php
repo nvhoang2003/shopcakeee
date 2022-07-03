@@ -123,9 +123,7 @@ class NormalController extends Controller
 
         $newid = CusRepos::insert($cus);
 
-        return redirect()
-            ->action('CusController@index')
-            ->with('msg', 'New cake with id: '.$newid.' has been inserted');
+        return view('normal.complete');
     }
 
 }
