@@ -82,5 +82,44 @@ class NormalController extends Controller
             'cake1' => $cake1
         ]);
     }
+    function formValidate (Request $request){
+        return \Illuminate\Support\Facades\Validator::make(
+            $request ->all(),
+            [
+                'cusname' => ['required'],
+                'dob' => ['required', 'after:1900/01/01', 'before:2022/01/01'],
+                'gender'=>['required'],
+                'contact'=>['required','digits:10'],
+                'email'=>['required','email'],
+                'address'=>['required']
+            ],
+            [
+                'cusname.required' => 'cusname can not be empty',
+                'dob.required' => 'dob can not be empty',
+                'gender.required'=>'gender can not be empty',
+                'contact.required'=>'contact can not be empty',
+                'email.required'=>'email can not be empty',
+                'address.required'=>' address can not be empty',
+                'email.email'=>'Invalid email'
+            ]
+        );
+    }
+    public function store(Request $request)
+    {
+//        dd($request->all());
+        $this->formValidate($request)->validate();
+        $cus = (object)[
+            'cusname' => $request->input('cusname'),
+            'dob' => $request->input('dob'),
+            'gender' => $request->input('gender'),
+            'contact'=>$request->input('contact'),
+            'email'=>$request->input('email'),
+            'address'=>$request->input('address')
+        ];
 
+
+        $newid = CusRepos::insert($cus);
+
+        return view('normal.complete');
+    }
 }

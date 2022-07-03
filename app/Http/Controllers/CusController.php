@@ -46,6 +46,27 @@ class CusController extends Controller
         return redirect()->action('CusController@index')
             ->with('msg', 'Update Successfully');
     }
-
+    function formValidate (Request $request){
+        return \Illuminate\Support\Facades\Validator::make(
+            $request ->all(),
+            [
+                'cusname' => ['required'],
+                'dob' => ['required', 'after:1900/01/01', 'before:2022/01/01'],
+                'gender'=>['required'],
+                'contact'=>['required','digits:10'],
+                'email'=>['required','email'],
+                'address'=>['required']
+            ],
+            [
+                'cusname.required' => 'cusname can not be empty',
+                'dob.required' => 'dob can not be empty',
+                'gender.required'=>'gender can not be empty',
+                'contact.required'=>'contact can not be empty',
+                'email.required'=>'email can not be empty',
+                'address.required'=>' address can not be empty',
+                'email.email'=>'Invalid email'
+            ]
+        );
+    }
 
 }
