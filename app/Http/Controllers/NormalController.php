@@ -59,40 +59,21 @@ class NormalController extends Controller
                 'cake'=> $cake,
                 'search'=> $search
             ]
-
         );
     }
+    public function signup(){
+        return view('normal.signup',
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            ["cus"=>(object)[
+                'cusid'=>'',
+                'cusname'=>'',
+                'dob'=>'',
+                'gender'=>'',
+                'contact'=>'',
+                'email'=>'',
+                'address'=>''
+            ]]);
+    }
     public function Cakedetail($cakeid){
         $cake = CakeRepos::getCakeById($cakeid);
         $cake1 = CakeRepos::getCakeByEventid($cake[0]->event);

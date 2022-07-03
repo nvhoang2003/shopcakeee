@@ -31,5 +31,20 @@ class CusRepos
 
     }
 
+    public static function insert(object $cus)
+    {
+        $sql = 'insert into customer ';
+        $sql .= '(cusname, dob, gender, contact, email, address) ';
+        $sql .= 'values (?, ?, ?, ?, ?, ?) ';
+
+        $result =  DB::insert($sql, [$cus->cusname, $cus->dob, $cus->gender, $cus->contact, $cus->email,
+            $cus->address]);
+        if($result){
+            return DB::getPdo()->lastInsertId();
+        } else {
+            return -1;
+        }
+    }
+
 
 }
