@@ -122,4 +122,8 @@ class NormalController extends Controller
 
         return view('normal.complete');
     }
+
+    public function order(){
+        return view('normal.OrderCake');
+    }
 }

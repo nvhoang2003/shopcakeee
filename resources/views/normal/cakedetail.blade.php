@@ -22,7 +22,7 @@
             <p>Flavor: {{$cake->flavor}}</p>
             <p>Size: {{$cake->size}}</p>
             <a href="{{asset("/storage/images/Cake/".$cake->image)}}" class="text-light" target="_blank"> <button class="btn btn-block btn-success col-3 mb-1"><i class="fas fa-expand-arrows-alt"></i></button></a>
-            <a href="#" class="text-light"><button class="btn btn-block btn-dark col-3"><i class="fas fa-shopping-cart"></i></button></a>
+            <a href="{{route('Client.Order')}}" class="text-light"><button class="btn btn-block btn-dark col-3"><i class="fas fa-shopping-cart"></i></button></a>
         </div>
         <div class="offset-1 col-2">
             <p class="font-weight-bold bg-warning">May You Like</p>
