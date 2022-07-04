@@ -133,4 +133,10 @@ class NormalController extends Controller
     public function contact(){
         return view('normal.contact');
     }
+    public function cake(){
+        $cake=CakeRepos::getAllCake();
+        return view('normal.Cakeview',[
+            'cake'=>$cake
+        ]);
+    }
 }

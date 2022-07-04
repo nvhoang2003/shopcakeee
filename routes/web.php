@@ -202,4 +202,8 @@ Route::group(['prefix' => 'client'], function (){
         'uses' => 'NormalController@contact',
         'as' => 'Client.Contact'
     ]);
+    Route::get('Cake',[
+        'uses' => 'NormalController@cake',
+        'as' => 'Client.Cake'
+    ]);
 });
