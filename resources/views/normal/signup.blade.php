@@ -13,7 +13,7 @@
             <div class="card-body">
                 <div class="m-sm-4">
                     <div class="text-center">
-                        <img src="{{asset('/storage/images/logo/'.'logocakeshop.png')}}" alt="" height="200" width="200" class="img-fluid rounded-circle">
+                        <img src="{{asset('/storage/images/logo/'.'logocakeshop.jpg')}}" alt="" height="200" width="200" class="img-fluid rounded-circle">
                     </div>
                     <form
                         action="{{route('Client.store')}}"
@@ -65,7 +65,7 @@
                         </div>
                         <div class="text-center mt-3 ">
                             <button class="au-btn au-btn--block au-btn--green m-b-20"  style=" background-color: #222e3c" type="submit">sign up</button>
-                            <button class="au-btn au-btn--block au-btn--green m-b-20" style=" background-color:  #2b3947" type="reset">reset</button>
+                            <button class="au-btn au-btn--block au-btn--green m-b-20" style=" background-color: #2b3947" type="reset">reset</button>
                         </div>
                     </form>
 

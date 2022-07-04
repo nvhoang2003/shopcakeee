@@ -1,6 +1,8 @@
-@extends('master.clientmasterpage')
+{{--@extends('master.clientmasterpage')--}}
 
-@section('main')
+{{--@section('main')--}}
+
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html class="supernova"><head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -1022,41 +1024,45 @@
     <script src="https://cdn02.jotfor.ms/static/prototype.forms.js?3.3.34400" type="text/javascript"></script>
     <script src="https://cdn03.jotfor.ms/static/jotform.forms.js?3.3.34400" type="text/javascript"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
-    <script type="text/javascript">	JotForm.newDefaultTheme = false;
-        JotForm.extendsNewTheme = false;
-        JotForm.newPaymentUIForNewCreatedForms = false;
+{{--    <script type="text/javascript">	JotForm.newDefaultTheme = false;--}}
+{{--        JotForm.extendsNewTheme = false;--}}
+{{--        JotForm.newPaymentUIForNewCreatedForms = false;--}}
 
-        JotForm.init(function(){
-            /*INIT-START*/
-            if (window.JotForm && JotForm.accessible) $('input_3').setAttribute('tabindex',0);
-            setTimeout(function() {
-                $('input_35').hint('ex: myname@example.com');
-            }, 20);
+{{--        JotForm.init(function(){--}}
+{{--            /*INIT-START*/--}}
+{{--            if (window.JotForm && JotForm.accessible) $('input_3').setAttribute('tabindex',0);--}}
+{{--            setTimeout(function() {--}}
+{{--                $('input_35').hint('ex: myname@example.com');--}}
+{{--            }, 20);--}}
 
-            JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-            JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-            JotForm.calendarOther = {"today":"Today"};
-            var languageOptions = document.querySelectorAll('#langList li');
-            for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) {
-                languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("38", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
-            }
-            JotForm.onTranslationsFetch(function() { JotForm.setCalendar("38", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); });
-            JotForm.displayLocalTime("hour_38", "min_38", "ampm_38", null, true);
-            if (window.JotForm && JotForm.accessible) $('input_8').setAttribute('tabindex',0);
-            /*INIT-END*/
-        });
+{{--            JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];--}}
+{{--            JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];--}}
+{{--            JotForm.calendarOther = {"today":"Today"};--}}
+{{--            var languageOptions = document.querySelectorAll('#langList li');--}}
+{{--            for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) {--}}
+{{--                languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("38", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });--}}
+{{--            }--}}
+{{--            JotForm.onTranslationsFetch(function() { JotForm.setCalendar("38", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); });--}}
+{{--            JotForm.displayLocalTime("hour_38", "min_38", "ampm_38", null, true);--}}
+{{--            if (window.JotForm && JotForm.accessible) $('input_8').setAttribute('tabindex',0);--}}
+{{--            /*INIT-END*/--}}
+{{--        });--}}
 
-        JotForm.prepareCalculationsOnTheFly([null,null,null,{"name":"name","qid":"3","text":"Name","type":"control_textbox"},null,null,null,null,{"name":"noOf8","qid":"8","text":"No. of Serves","type":"control_textbox"},null,null,null,{"name":"flavour","qid":"12","text":"Flavour","type":"control_dropdown"},{"name":"filling","qid":"13","text":"Filling","type":"control_dropdown"},null,null,null,null,null,{"name":"submitForm","qid":"19","text":"Submit Form","type":"control_button"},null,null,null,null,null,{"name":"servingSize","qid":"25","text":"Serving Size","type":"control_dropdown"},null,null,null,null,null,null,{"name":"holidayCake32","qid":"32","text":"Dặt hang banh ","type":"control_head"},null,{"name":"contactNumber","qid":"34","text":"Contact Number","type":"control_phone"},{"name":"email","qid":"35","text":"E-mail","type":"control_email"},null,{"name":"deliveryAddress","qid":"37","text":"Delivery Address","type":"control_address"},{"name":"dateRequired38","qid":"38","text":"Date Required","type":"control_datetime"}]);
-        setTimeout(function() {
-            JotForm.paymentExtrasOnTheFly([null,null,null,{"name":"name","qid":"3","text":"Name","type":"control_textbox"},null,null,null,null,{"name":"noOf8","qid":"8","text":"No. of Serves","type":"control_textbox"},null,null,null,{"name":"flavour","qid":"12","text":"Flavour","type":"control_dropdown"},{"name":"filling","qid":"13","text":"Filling","type":"control_dropdown"},null,null,null,null,null,{"name":"submitForm","qid":"19","text":"Submit Form","type":"control_button"},null,null,null,null,null,{"name":"servingSize","qid":"25","text":"Serving Size","type":"control_dropdown"},null,null,null,null,null,null,{"name":"holidayCake32","qid":"32","text":"Dặt hang banh ","type":"control_head"},null,{"name":"contactNumber","qid":"34","text":"Contact Number","type":"control_phone"},{"name":"email","qid":"35","text":"E-mail","type":"control_email"},null,{"name":"deliveryAddress","qid":"37","text":"Delivery Address","type":"control_address"},{"name":"dateRequired38","qid":"38","text":"Date Required","type":"control_datetime"}]);}, 20);
-    </script>
+{{--        JotForm.prepareCalculationsOnTheFly([null,null,null,{"name":"name","qid":"3","text":"Name","type":"control_textbox"},null,null,null,null,{"name":"noOf8","qid":"8","text":"No. of Serves","type":"control_textbox"},null,null,null,{"name":"flavour","qid":"12","text":"Flavour","type":"control_dropdown"},{"name":"filling","qid":"13","text":"Filling","type":"control_dropdown"},null,null,null,null,null,{"name":"submitForm","qid":"19","text":"Submit Form","type":"control_button"},null,null,null,null,null,{"name":"servingSize","qid":"25","text":"Serving Size","type":"control_dropdown"},null,null,null,null,null,null,{"name":"holidayCake32","qid":"32","text":"Dặt hang banh ","type":"control_head"},null,{"name":"contactNumber","qid":"34","text":"Contact Number","type":"control_phone"},{"name":"email","qid":"35","text":"E-mail","type":"control_email"},null,{"name":"deliveryAddress","qid":"37","text":"Delivery Address","type":"control_address"},{"name":"dateRequired38","qid":"38","text":"Date Required","type":"control_datetime"}]);--}}
+{{--        setTimeout(function() {--}}
+{{--            JotForm.paymentExtrasOnTheFly([null,null,null,{"name":"name","qid":"3","text":"Name","type":"control_textbox"},null,null,null,null,{"name":"noOf8","qid":"8","text":"No. of Serves","type":"control_textbox"},null,null,null,{"name":"flavour","qid":"12","text":"Flavour","type":"control_dropdown"},{"name":"filling","qid":"13","text":"Filling","type":"control_dropdown"},null,null,null,null,null,{"name":"submitForm","qid":"19","text":"Submit Form","type":"control_button"},null,null,null,null,null,{"name":"servingSize","qid":"25","text":"Serving Size","type":"control_dropdown"},null,null,null,null,null,null,{"name":"holidayCake32","qid":"32","text":"Dặt hang banh ","type":"control_head"},null,{"name":"contactNumber","qid":"34","text":"Contact Number","type":"control_phone"},{"name":"email","qid":"35","text":"E-mail","type":"control_email"},null,{"name":"deliveryAddress","qid":"37","text":"Delivery Address","type":"control_address"},{"name":"dateRequired38","qid":"38","text":"Date Required","type":"control_datetime"}]);}, 20);--}}
+{{--    </script>--}}
 </head>
 <body>
+
 <form class="jotform-form" action="https://submit.jotform.com/submit/221831661947461/" method="post" name="form_221831661947461" id="221831661947461" accept-charset="utf-8" autocomplete="on">
     <input type="hidden" name="formID" value="221831661947461" />
     <input type="hidden" id="JWTContainer" value="" />
     <input type="hidden" id="cardinalOrderNumber" value="" />
-    <div role="main" class="form-all">
+    <div role="main" class="form-all"  >
+        <div class="text-center">
+{{--            <img src="{{asset('/storage/images/logo/'.'logocakeshop.jpg')}}" alt="" height="200" width="200" class="img-fluid rounded-circle">--}}
+        </div>
         <ul class="form-section page-section">
             <li id="cid_32" class="form-input-wide" data-type="control_head">
                 <div class="form-header-group  header-large">
@@ -1086,7 +1092,7 @@
           </span>
                 </label>
                 <div id="cid_35" class="form-input jf-required">
-                    <input type="text" id="input_35" name="q35_email" class="form-textbox validate[required]" data-defaultvalue="" size="30" value=""  data-component="email" aria-labelledby="label_35" required="" />
+                    <input type="text" id="input_35" name="q35_email" class="form-textbox validate[required]" data-defaultvalue="" size="30" value=""  data-component="textbox" aria-labelledby="label_35" required="" />
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_phone" id="id_34">
@@ -1098,13 +1104,7 @@
                 </label>
                 <div id="cid_34" class="form-input jf-required">
                     <div data-wrapper-react="true">
-            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="areaCode">
-              <input type="number" id="input_34_area" name="q34_contactNumber[area]" class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_34 tel-area-code" value="" data-component="areaCode" aria-labelledby="label_34 sublabel_34_area" required="" />
-              <span class="phone-separate" aria-hidden="true">
-                 -
-              </span>
-              <label class="form-sub-label" for="input_34_area" id="sublabel_34_area" style="min-height:13px" aria-hidden="false"> Area Code </label>
-            </span>
+
                         <span class="form-sub-label-container" style="vertical-align:top" data-input-type="phone">
               <input type="tel" id="input_34_phone" name="q34_contactNumber[phone]" class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_34 tel-local" value="" data-component="phone" aria-labelledby="label_34 sublabel_34_phone" required="" />
               <label class="form-sub-label" for="input_34_phone" id="sublabel_34_phone" style="min-height:13px" aria-hidden="false"> Phone Number </label>
@@ -1112,83 +1112,10 @@
                     </div>
                 </div>
             </li>
-            <li class="form-line allowTime" data-type="control_datetime" id="id_38">
-                <label class="form-label form-label-left form-label-auto" id="label_38" for="lite_mode_38"> Date Required </label>
-                <div id="cid_38" class="form-input">
-                    <div data-wrapper-react="true" class="extended">
-                        <div style="display:none">
-              <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[limitDate]" id="month_38" name="q38_dateRequired38[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_38 off" aria-labelledby="label_38 sublabel_38_month" />
-                <span class="date-separate" aria-hidden="true">
-                   -
-                </span>
-                <label class="form-sub-label" for="month_38" id="sublabel_38_month" style="min-height:13px" aria-hidden="false"> Month </label>
-              </span>
-                            <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[limitDate]" id="day_38" name="q38_dateRequired38[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_38 off" aria-labelledby="label_38 sublabel_38_day" />
-                <span class="date-separate" aria-hidden="true">
-                   -
-                </span>
-                <label class="form-sub-label" for="day_38" id="sublabel_38_day" style="min-height:13px" aria-hidden="false"> Day </label>
-              </span>
-                            <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[limitDate]" id="year_38" name="q38_dateRequired38[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" autoComplete="section-input_38 off" aria-labelledby="label_38 sublabel_38_year" />
-                <label class="form-sub-label" for="year_38" id="sublabel_38_year" style="min-height:13px" aria-hidden="false"> Year </label>
-              </span>
-                        </div>
-                        <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="text" class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_38" size="12" data-maxlength="12" maxLength="12" data-age="" value="" data-format="mmddyyyy" data-seperator="-" placeholder="mm-dd-yyyy" autoComplete="section-input_38 off" aria-labelledby="label_38 sublabel_38_litemode" />
-              <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_38_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="Yes" data-version="v1" />
-              <label class="form-sub-label" for="lite_mode_38" id="sublabel_38_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
-            </span>
-                        <span class="allowTime-container">
-              <span class="form-sub-label-container" style="vertical-align:top">
-                <select class="time-dropdown form-dropdown validate[limitDate]" id="hour_38" name="q38_dateRequired38[hour]" aria-labelledby="label_38 sublabel_38_hour">
-                  <option>  </option>
-                  <option value="1"> 1 </option>
-                  <option value="2"> 2 </option>
-                  <option value="3"> 3 </option>
-                  <option value="4"> 4 </option>
-                  <option value="5"> 5 </option>
-                  <option value="6"> 6 </option>
-                  <option value="7"> 7 </option>
-                  <option value="8"> 8 </option>
-                  <option value="9"> 9 </option>
-                  <option value="10"> 10 </option>
-                  <option value="11"> 11 </option>
-                  <option value="12"> 12 </option>
-                </select>
-                <span class="date-separate" aria-hidden="true">
-                   :
-                </span>
-                <label class="form-sub-label" for="hour_38" id="sublabel_38_hour" style="min-height:13px" aria-hidden="false"> Hour </label>
-              </span>
-              <span class="form-sub-label-container" style="vertical-align:top">
-                <select class="time-dropdown form-dropdown validate[limitDate]" id="min_38" name="q38_dateRequired38[min]" aria-labelledby="label_38 sublabel_38_minutes">
-                  <option>  </option>
-                  <option value="00"> 00 </option>
-                  <option value="10"> 10 </option>
-                  <option value="20"> 20 </option>
-                  <option value="30"> 30 </option>
-                  <option value="40"> 40 </option>
-                  <option value="50"> 50 </option>
-                </select>
-                <label class="form-sub-label" for="min_38" id="sublabel_38_minutes" style="min-height:13px" aria-hidden="false"> Minutes </label>
-              </span>
-              <span class="form-sub-label-container" style="vertical-align:top">
-                <select class="time-dropdown form-dropdown validate[limitDate]" id="ampm_38" name="q38_dateRequired38[ampm]" aria-labelledby="label_38 sublabel_38_ampm">
-                  <option selected="" value="AM"> AM </option>
-                  <option value="PM"> PM </option>
-                </select>
-                <label class="form-sub-label" for="ampm_38" id="sublabel_38_ampm" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap" aria-hidden="false"> AM/PM Option </label>
-              </span>
-            </span>
-                    </div>
-                </div>
-            </li>
+
             <li class="form-line jf-required" data-type="control_textbox" id="id_8">
                 <label class="form-label form-label-left form-label-auto" id="label_8" for="input_8">
-                    No. of Serves
+                    Item code
                     <span class="form-required">
             *
           </span>
@@ -1197,61 +1124,33 @@
                     <input type="text" id="input_8" name="q8_noOf8" data-type="input-textbox" class="form-textbox validate[required, Numeric]" data-defaultvalue="" size="20" value="" placeholder=" " data-component="textbox" aria-labelledby="label_8" required="" />
                 </div>
             </li>
-            <li class="form-line jf-required" data-type="control_dropdown" id="id_25">
-                <label class="form-label form-label-left form-label-auto" id="label_25" for="input_25">
-                    Serving Size
+            <li class="form-line jf-required" data-type="control_textbox" id="id_8">
+                <label class="form-label form-label-left form-label-auto" id="label_8" for="input_8">
+                    Quantity
                     <span class="form-required">
             *
           </span>
                 </label>
-                <div id="cid_25" class="form-input jf-required">
-                    <select class="form-dropdown validate[required]" id="input_25" name="q25_servingSize" style="width:150px" data-component="dropdown" required="">
-                        <option value="">  </option>
-                        <option value="Dessert Size (2&quot; x 1&quot;)"> Dessert Size (2&quot; x 1&quot;) </option>
-                        <option value="Coffee Size (1&quot; x 1&quot;"> Coffee Size (1&quot; x 1&quot; </option>
-                    </select>
+                <div id="cid_8" class="form-input jf-required">
+                    <input type="text" id="input_8" name="q8_noOf8" data-type="input-textbox" class="form-textbox validate[required, Numeric]" data-defaultvalue="" size="25" value="" placeholder=" " data-component="textbox" aria-labelledby="label_8" required="" />
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_dropdown" id="id_12">
                 <label class="form-label form-label-left form-label-auto" id="label_12" for="input_12">
-                    Flavour
+                    Egg less/with Egg
                     <span class="form-required">
             *
           </span>
                 </label>
                 <div id="cid_12" class="form-input jf-required">
-                    <select class="form-dropdown validate[required]" id="input_12" name="q12_flavour" style="width:150px" data-component="dropdown" required="">
+                    <select class="form-dropdown validate[required]" id="input_12" name="q12_flavour" style="width:100px" data-component="dropdown" required="">
                         <option value="">  </option>
-                        <option value="Mud Cake - Chocolate"> Mud Cake - Chocolate </option>
-                        <option value="Mud Cake - White Chocolate"> Mud Cake - White Chocolate </option>
-                        <option value="Mud Cake - Caramel"> Mud Cake - Caramel </option>
-                        <option value="Mud Cake - Jaffa"> Mud Cake - Jaffa </option>
-                        <option value="Mud Cake - Toblerone"> Mud Cake - Toblerone </option>
-                        <option value="Vanilla"> Vanilla </option>
-                        <option value="Chocolate"> Chocolate </option>
-                        <option value="Top Deck (Vanilla &amp; Chocolate Layers)"> Top Deck (Vanilla &amp; Chocolate Layers) </option>
-                        <option value="Marble (Vanilla &amp; Chocolate Marbled)"> Marble (Vanilla &amp; Chocolate Marbled) </option>
-                        <option value="Rainbow (Multi Coloured Layers)"> Rainbow (Multi Coloured Layers) </option>
+                        <option value="Egg-less">Egg-less</option>
+                        <option value="Egg"> Egg </option>
                     </select>
                 </div>
             </li>
-            <li class="form-line jf-required" data-type="control_dropdown" id="id_13">
-                <label class="form-label form-label-left form-label-auto" id="label_13" for="input_13">
-                    Filling
-                    <span class="form-required">
-            *
-          </span>
-                </label>
-                <div id="cid_13" class="form-input jf-required">
-                    <select class="form-dropdown validate[required]" id="input_13" name="q13_filling" style="width:150px" data-component="dropdown" required="">
-                        <option value="">  </option>
-                        <option value="Dark Chocolate Ganache"> Dark Chocolate Ganache </option>
-                        <option value="Milk Chocolate Ganache"> Milk Chocolate Ganache </option>
-                        <option value="White Chocolate Ganache"> White Chocolate Ganache </option>
-                        <option value="Buttercream"> Buttercream </option>
-                    </select>
-                </div>
-            </li>
+
             <li class="form-line" data-type="control_address" id="id_37">
                 <label class="form-label form-label-left form-label-auto" id="label_37" for="input_37_addr_line1"> Delivery Address </label>
                 <div id="cid_37" class="form-input">
@@ -1297,6 +1196,39 @@
                     </div>
                 </div>
             </li>
+            <li class="form-line allowTime" data-type="control_datetime" id="id_38">
+                <label class="form-label form-label-left form-label-auto" id="label_38" for="lite_mode_38"> Delivery Date </label>
+                <div id="cid_38" class="form-input">
+                    <div data-wrapper-react="true" class="extended">
+                        <div style="display:none">
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="month_38" name="q38_dateRequired38[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_38 off" aria-labelledby="label_38 sublabel_38_month" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="month_38" id="sublabel_38_month" style="min-height:13px" aria-hidden="false"> Month </label>
+              </span>
+                            <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="day_38" name="q38_dateRequired38[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_38 off" aria-labelledby="label_38 sublabel_38_day" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="day_38" id="sublabel_38_day" style="min-height:13px" aria-hidden="false"> Day </label>
+              </span>
+                            <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="year_38" name="q38_dateRequired38[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" autoComplete="section-input_38 off" aria-labelledby="label_38 sublabel_38_year" />
+                <label class="form-sub-label" for="year_38" id="sublabel_38_year" style="min-height:13px" aria-hidden="false"> Year </label>
+              </span>
+                        </div>
+                        <span class="form-sub-label-container" style="vertical-align:top">
+              <input type="text" class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_38" size="12" data-maxlength="12" maxLength="12" data-age="" value="" data-format="mmddyyyy" data-seperator="-" placeholder="mm-dd-yyyy" autoComplete="section-input_38 off" aria-labelledby="label_38 sublabel_38_litemode" />
+              <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_38_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="Yes" data-version="v1" />
+              <label class="form-sub-label" for="lite_mode_38" id="sublabel_38_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
+            </span>
+
+                    </div>
+                </div>
+            </li>
             <li class="form-line" data-type="control_button" id="id_19">
                 <div id="cid_19" class="form-input-wide">
                     <div style="text-align:left" data-align="left" class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
@@ -1312,12 +1244,6 @@
                         <span>
 
             </span>
-                        <button id="input_print_19" type="button" class="form-submit-print jf-form-buttons" data-component="button">
-                            <img src="https://cdn.jotfor.ms/images/printer.png" style="vertical-align:middle" />
-                            <span id="span_print_19" class="span_print">
-                Print Form
-              </span>
-                        </button>
                     </div>
                 </div>
             </li>
@@ -1343,10 +1269,10 @@
     </script>
 </form></body>
 </html>
-@endsection
+{{--@endsection--}}
 
 
 
 
-@section('script')
-@endsection
+{{--@section('script')--}}
+{{--@endsection--}}
