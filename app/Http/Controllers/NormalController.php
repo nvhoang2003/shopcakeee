@@ -126,4 +126,8 @@ class NormalController extends Controller
     public function order(){
         return view('normal.OrderCake');
     }
+
+    public function about(){
+        return view('normal.About');
+    }
 }

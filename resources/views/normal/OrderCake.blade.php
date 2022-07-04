@@ -1,6 +1,6 @@
-{{--@extends('master.clientmasterpage')--}}
+@extends('master.clientmasterpage')
 
-{{--@section('main')--}}
+@section('main')
 
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -1269,10 +1269,10 @@
     </script>
 </form></body>
 </html>
-{{--@endsection--}}
+@endsection
 
 
 
 
-{{--@section('script')--}}
-{{--@endsection--}}
+@section('script')
+@endsection
