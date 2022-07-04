@@ -41,7 +41,7 @@
                             <li><a href="./shop.html">Shop</a></li>
                             <li><a href="{{route('auth.home')}}#event">Event</a>
                             <li><a href="./contact.html">Cake</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="{{route('Client.Contact')}}">Contact</a></li>
                             <li><a href="{{route('Client.signup')}}">Sign up</a></li>
                         </ul>
                     </nav>

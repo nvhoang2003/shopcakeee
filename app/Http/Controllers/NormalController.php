@@ -130,4 +130,7 @@ class NormalController extends Controller
     public function about(){
         return view('normal.About');
     }
+    public function contact(){
+        return view('normal.contact');
+    }
 }
