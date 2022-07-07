@@ -53,10 +53,10 @@ class NormalController extends Controller
 
 //        dd($request->all());
         $search = $request->search;
-        $cake = CakeRepos::getCakeBySearch($search);
+        $cake1 = CakeRepos::getCakeBySearch($search);
 //        dd(count($cake));
         return view('normal.cakeSearch',[
-                'cake'=> $cake,
+                'cake1'=> $cake1,
                 'search'=> $search
             ]
         );
@@ -134,9 +134,9 @@ class NormalController extends Controller
         return view('normal.contact');
     }
     public function cake(){
-        $cake=CakeRepos::getAllCake();
+        $cake1=CakeRepos::getAllCake();
         return view('normal.Cakeview',[
-            'cake'=>$cake
+            'cake1'=>$cake1
         ]);
     }
 }

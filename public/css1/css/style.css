@@ -1140,7 +1140,7 @@ ol {
   margin-bottom: 22px;
 }
 .footer__widget ul li {
-  list-style: none;
+  /*list-style: none;*/
   font-size: 14px;
   color: #a4a4a4;
   line-height: 36px;
