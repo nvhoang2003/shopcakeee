@@ -20,12 +20,12 @@
 
       <div class="form-group">
         <label for="price" class="font-weight-bold">Price</label>
-        <input type="text" class="form-control" id="price" name="price" value="{{old('price')?? $cake->price}}">
+        <input type="number" class="form-control" id="price" name="price" value="{{old('price')?? $cake->price}}">
       </div>
 
       <div class="form-group">
         <label for="expiry" class="font-weight-bold">Expiry</label>
-        <input type="text" class="form-control" id="expiry" name="expiry" value="{{old('expiry')?? $cake->expiry}}">
+        <input type="number" class="form-control" id="expiry" name="expiry" value="{{old('expiry')?? $cake->expiry}}">
       </div>
 
       <div class="form-group">

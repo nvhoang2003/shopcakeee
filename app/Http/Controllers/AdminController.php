@@ -24,7 +24,7 @@ class AdminController extends Controller
             $request ->all(),
             [
                 'username' => ['required'],
-                'contact' => ['required'],
+                'contact' => ['required','digits:10'],
                 'password'=> ['required',
                     function($attribute, $value , $fail){
                         global $request;
