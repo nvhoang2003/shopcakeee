@@ -3,7 +3,7 @@
 {{--@section('main')--}}
 
 
-    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html class="supernova"><head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="alternate" type="application/json+oembed" href="https://www.jotform.com/oembed/?format=json&amp;url=https%3A%2F%2Fform.jotform.com%2F221831661947461" title="oEmbed Form">
@@ -1024,34 +1024,34 @@
     <script src="https://cdn02.jotfor.ms/static/prototype.forms.js?3.3.34400" type="text/javascript"></script>
     <script src="https://cdn03.jotfor.ms/static/jotform.forms.js?3.3.34400" type="text/javascript"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
-    {{--    <script type="text/javascript">	JotForm.newDefaultTheme = false;--}}
-    {{--        JotForm.extendsNewTheme = false;--}}
-    {{--        JotForm.newPaymentUIForNewCreatedForms = false;--}}
+{{--    <script type="text/javascript">	JotForm.newDefaultTheme = false;--}}
+{{--        JotForm.extendsNewTheme = false;--}}
+{{--        JotForm.newPaymentUIForNewCreatedForms = false;--}}
 
-    {{--        JotForm.init(function(){--}}
-    {{--            /*INIT-START*/--}}
-    {{--            if (window.JotForm && JotForm.accessible) $('input_3').setAttribute('tabindex',0);--}}
-    {{--            setTimeout(function() {--}}
-    {{--                $('input_35').hint('ex: myname@example.com');--}}
-    {{--            }, 20);--}}
+{{--        JotForm.init(function(){--}}
+{{--            /*INIT-START*/--}}
+{{--            if (window.JotForm && JotForm.accessible) $('input_3').setAttribute('tabindex',0);--}}
+{{--            setTimeout(function() {--}}
+{{--                $('input_35').hint('ex: myname@example.com');--}}
+{{--            }, 20);--}}
 
-    {{--            JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];--}}
-    {{--            JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];--}}
-    {{--            JotForm.calendarOther = {"today":"Today"};--}}
-    {{--            var languageOptions = document.querySelectorAll('#langList li');--}}
-    {{--            for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) {--}}
-    {{--                languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("38", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });--}}
-    {{--            }--}}
-    {{--            JotForm.onTranslationsFetch(function() { JotForm.setCalendar("38", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); });--}}
-    {{--            JotForm.displayLocalTime("hour_38", "min_38", "ampm_38", null, true);--}}
-    {{--            if (window.JotForm && JotForm.accessible) $('input_8').setAttribute('tabindex',0);--}}
-    {{--            /*INIT-END*/--}}
-    {{--        });--}}
+{{--            JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];--}}
+{{--            JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];--}}
+{{--            JotForm.calendarOther = {"today":"Today"};--}}
+{{--            var languageOptions = document.querySelectorAll('#langList li');--}}
+{{--            for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) {--}}
+{{--                languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("38", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });--}}
+{{--            }--}}
+{{--            JotForm.onTranslationsFetch(function() { JotForm.setCalendar("38", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); });--}}
+{{--            JotForm.displayLocalTime("hour_38", "min_38", "ampm_38", null, true);--}}
+{{--            if (window.JotForm && JotForm.accessible) $('input_8').setAttribute('tabindex',0);--}}
+{{--            /*INIT-END*/--}}
+{{--        });--}}
 
-    {{--        JotForm.prepareCalculationsOnTheFly([null,null,null,{"name":"name","qid":"3","text":"Name","type":"control_textbox"},null,null,null,null,{"name":"noOf8","qid":"8","text":"No. of Serves","type":"control_textbox"},null,null,null,{"name":"flavour","qid":"12","text":"Flavour","type":"control_dropdown"},{"name":"filling","qid":"13","text":"Filling","type":"control_dropdown"},null,null,null,null,null,{"name":"submitForm","qid":"19","text":"Submit Form","type":"control_button"},null,null,null,null,null,{"name":"servingSize","qid":"25","text":"Serving Size","type":"control_dropdown"},null,null,null,null,null,null,{"name":"holidayCake32","qid":"32","text":"Dặt hang banh ","type":"control_head"},null,{"name":"contactNumber","qid":"34","text":"Contact Number","type":"control_phone"},{"name":"email","qid":"35","text":"E-mail","type":"control_email"},null,{"name":"deliveryAddress","qid":"37","text":"Delivery Address","type":"control_address"},{"name":"dateRequired38","qid":"38","text":"Date Required","type":"control_datetime"}]);--}}
-    {{--        setTimeout(function() {--}}
-    {{--            JotForm.paymentExtrasOnTheFly([null,null,null,{"name":"name","qid":"3","text":"Name","type":"control_textbox"},null,null,null,null,{"name":"noOf8","qid":"8","text":"No. of Serves","type":"control_textbox"},null,null,null,{"name":"flavour","qid":"12","text":"Flavour","type":"control_dropdown"},{"name":"filling","qid":"13","text":"Filling","type":"control_dropdown"},null,null,null,null,null,{"name":"submitForm","qid":"19","text":"Submit Form","type":"control_button"},null,null,null,null,null,{"name":"servingSize","qid":"25","text":"Serving Size","type":"control_dropdown"},null,null,null,null,null,null,{"name":"holidayCake32","qid":"32","text":"Dặt hang banh ","type":"control_head"},null,{"name":"contactNumber","qid":"34","text":"Contact Number","type":"control_phone"},{"name":"email","qid":"35","text":"E-mail","type":"control_email"},null,{"name":"deliveryAddress","qid":"37","text":"Delivery Address","type":"control_address"},{"name":"dateRequired38","qid":"38","text":"Date Required","type":"control_datetime"}]);}, 20);--}}
-    {{--    </script>--}}
+{{--        JotForm.prepareCalculationsOnTheFly([null,null,null,{"name":"name","qid":"3","text":"Name","type":"control_textbox"},null,null,null,null,{"name":"noOf8","qid":"8","text":"No. of Serves","type":"control_textbox"},null,null,null,{"name":"flavour","qid":"12","text":"Flavour","type":"control_dropdown"},{"name":"filling","qid":"13","text":"Filling","type":"control_dropdown"},null,null,null,null,null,{"name":"submitForm","qid":"19","text":"Submit Form","type":"control_button"},null,null,null,null,null,{"name":"servingSize","qid":"25","text":"Serving Size","type":"control_dropdown"},null,null,null,null,null,null,{"name":"holidayCake32","qid":"32","text":"Dặt hang banh ","type":"control_head"},null,{"name":"contactNumber","qid":"34","text":"Contact Number","type":"control_phone"},{"name":"email","qid":"35","text":"E-mail","type":"control_email"},null,{"name":"deliveryAddress","qid":"37","text":"Delivery Address","type":"control_address"},{"name":"dateRequired38","qid":"38","text":"Date Required","type":"control_datetime"}]);--}}
+{{--        setTimeout(function() {--}}
+{{--            JotForm.paymentExtrasOnTheFly([null,null,null,{"name":"name","qid":"3","text":"Name","type":"control_textbox"},null,null,null,null,{"name":"noOf8","qid":"8","text":"No. of Serves","type":"control_textbox"},null,null,null,{"name":"flavour","qid":"12","text":"Flavour","type":"control_dropdown"},{"name":"filling","qid":"13","text":"Filling","type":"control_dropdown"},null,null,null,null,null,{"name":"submitForm","qid":"19","text":"Submit Form","type":"control_button"},null,null,null,null,null,{"name":"servingSize","qid":"25","text":"Serving Size","type":"control_dropdown"},null,null,null,null,null,null,{"name":"holidayCake32","qid":"32","text":"Dặt hang banh ","type":"control_head"},null,{"name":"contactNumber","qid":"34","text":"Contact Number","type":"control_phone"},{"name":"email","qid":"35","text":"E-mail","type":"control_email"},null,{"name":"deliveryAddress","qid":"37","text":"Delivery Address","type":"control_address"},{"name":"dateRequired38","qid":"38","text":"Date Required","type":"control_datetime"}]);}, 20);--}}
+{{--    </script>--}}
 </head>
 <body>
 
@@ -1061,7 +1061,7 @@
     <input type="hidden" id="cardinalOrderNumber" value="" />
     <div role="main" class="form-all"  >
         <div class="text-center">
-            {{--            <img src="{{asset('/storage/images/logo/'.'logocakeshop.jpg')}}" alt="" height="200" width="200" class="img-fluid rounded-circle">--}}
+{{--            <img src="{{asset('/storage/images/logo/'.'logocakeshop.jpg')}}" alt="" height="200" width="200" class="img-fluid rounded-circle">--}}
         </div>
         <ul class="form-section page-section">
             <li id="cid_32" class="form-input-wide" data-type="control_head">
