@@ -24,10 +24,10 @@
                         <td>{{$e->description}}</td>
                         <td><a type="button" class="btn btn-success btn-sm"
                                href="{{route('Event.edit',['eventid'=>$e->eventid])}}"
-                            >Update</a> </td>
+                            ><i class="fas fa-edit"></i></a> </td>
                         <td><a type="button" class="btn btn-danger btn-sm"
                                href="{{route('Event.confirm',['eventid'=>$e->eventid])}}"
-                            >Delete</a></td>
+                            ><i class="fas fa-trash"></i></a></td>
                     </tr>
                 @endforeach
                 </tbody>

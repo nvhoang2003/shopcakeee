@@ -1,7 +1,7 @@
 @extends('master.masterpage')
 
 @section('main')
-    <h2>Change Admin</h2>
+    <h1 class="display-4 text-center">Change Admin</h1>
 
     @include('partial.error')
 <form action="{{route('Admin.update', ['username' =>  $admin->username])}}" method="post">

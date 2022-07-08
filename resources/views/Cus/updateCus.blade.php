@@ -1,7 +1,7 @@
 @extends('master.masterpage')
 
 @section('main')
-    <h2>Change Admin</h2>
+    <h1 class="display-4 text-center">Change Customer Information</h1>
 
     @include('partial.error')
     <form action="{{route('Cus.update', ['cusid' =>  $cus->cusid])}}" method="post">
@@ -42,7 +42,7 @@
         </div>
 
         <div>
-            <input type="submit" value="Submit">
+            <input type="submit" class="btn-outline-dark btn btn-block mb-5" value="Submit">
         </div>
     </form>
 @endsection

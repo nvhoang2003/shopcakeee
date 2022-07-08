@@ -30,7 +30,7 @@
                         <td>{{$c->address}}</td>
                         <td><a type="button" class="btn btn-success btn-sm"
                                href="{{route('Cus.edit', ['cusid' => $c->cusid])}}"
-                            >Edit</a>
+                            ><i class="fas fa-edit"></i></a>
                         </td>
                     </tr>
                 @endforeach
