@@ -13,19 +13,19 @@
             <div class="card-body">
                 <div class="m-sm-4">
                     <div class="text-center">
-                        <img src="{{asset('/storage/images/logo/'.'logocakeshop.jpg')}}" alt="" height="200" width="200" class="img-fluid rounded-circle">
+                        <img src="{{asset('/storage/images/logo/'.'logocakeshop.png')}}" alt="" height="200" width="200" class="img-fluid rounded-circle">
                     </div>
                     <form
                         action="{{route('Client.store')}}"
                         method="post">
                         @csrf
                         <div class="form-group">
-                            <label label for="cusname" class="form-label" >Cus Name </label>
+                            <label label for="cusname" class="form-label" >Full Name </label>
                             <input class="au-input au-input--full" type="text" class="form-control form-control-lg"
-                                   id = "cusname" name="cusname" value="{{old('cusname')}}">
+                                   placeholder="Please enter your name" id = "cusname" name="cusname" value="{{old('cusname')}}">
                         </div>
                         <div class="form-group">
-                            <label label for="dob" class="form-label" >DOB </label>
+                            <label label for="dob" class="form-label" >Date Of Birth </label>
                             <input class="au-input au-input--full" type="date" id="dob" class="form-control form-control-lg" name="dob" value="{{old('dob')}}"
                             >
                         </div>
@@ -50,22 +50,22 @@
 
                         <div class="form-group">
                             <label label for="contact" class="form-label" >Contact </label>
-                            <input class="au-input au-input--full" type="number" id="contact" class="form-control form-control-lg" name="contact" placeholder="contact" value="{{old('contact')}}"
+                            <input class="au-input au-input--full" type="number" id="contact" class="form-control form-control-lg" name="contact" placeholder="Please enter your phone number" value="{{old('contact')}}"
                             >
                         </div>
                         <div class="form-group">
                             <label label for="email" class="form-label" >Email </label>
-                            <input class="au-input au-input--full" type="text" id="email" class="form-control form-control-lg" name="email" placeholder="email" value="{{old('email')}}"
+                            <input class="au-input au-input--full" type="text" id="email" class="form-control form-control-lg" name="email" placeholder="Please enter your email address" value="{{old('email')}}"
                             >
                         </div>
                         <div class="form-group">
                             <label label for="address" class="form-label" >Address </label>
-                            <input class="au-input au-input--full" type="text" id="address" class="form-control form-control-lg" name="address" placeholder="address" value="{{old('address')}}"
+                            <input class="au-input au-input--full" type="text" id="address" class="form-control form-control-lg" name="address" placeholder="Please enter your home address" value="{{old('address')}}"
                             >
                         </div>
                         <div class="text-center mt-3 ">
-                            <button class="au-btn au-btn--block au-btn--green m-b-20"  style=" background-color: #222e3c" type="submit">sign up</button>
-                            <button class="au-btn au-btn--block au-btn--green m-b-20" style=" background-color: #2b3947" type="reset">reset</button>
+                            <button class="btn btn-block btn-secondary m-b-20"  type="submit">Sign-Up</button>
+                            <button class="btn btn-block btn-secondary m-b-20"  type="reset">Reset</button>
                         </div>
                     </form>
 

@@ -4024,4 +4024,14 @@ ol {
   .checkout__order__products span {
     display: none;
   }
+  #paragraph1{
+      background-color: #9f3f3f;
+  }
+  #paragraph2{
+      background-color: #bbbb2a;
+  }
+  #paragraph3{
+      background-color: #d775d7;
+  }
+
 }

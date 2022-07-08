@@ -26,13 +26,14 @@
                         }
                     @endphp
 
-                    <td>
-                        <div>
+                    <td  class="col-3 pl-5">
+                        <div class="ml-5">
                             <p>{{$c->cakename}}</p>
-                            <img src="{{asset("/storage/images/Cake/".$c->image)}}" alt="" height="90" width="120" data-toggle="tooltip" data-html="true" title="<image width='250px' height='250px' src='{{asset("/storage/images/Cake/".$c->image)}}' />">
+                            <img src="{{asset("/storage/images/Cake/".$c->image)}}" alt="" height="90" width="120" data-toggle="tooltip" data-html="true" title="<image width='250px' height='200px' src='{{asset("/storage/images/Cake/".$c->image)}}' />">
                             <p>{{$c->price}}</p>
                             <div class="row">
-                                <a type="button" class="btn btn-warning btn-sm" href="{{route('Client.Cakedetail',['cakeid'=>$c->cakeid])}}"> Show </a>
+                                <a type="button" class="ml-4 btn btn-warning btn-sm" href="{{route('Client.Cakedetail',['cakeid'=>$c->cakeid])}}"><i class="fas fa-eye"></i></a>
+                                <a type="button" class="ml-1 btn btn-secondary btn-sm"  href="{{route('Client.Order')}}"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
 
