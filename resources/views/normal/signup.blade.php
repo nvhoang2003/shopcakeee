@@ -2,8 +2,32 @@
 
 @section('main')
     <main>
-        <link href="{{asset('css/theme.css')}}" rel="stylesheet" media="all">
+    <style>
+
+         .au-input, .au-input--full {
+            width: 100%;
+            line-height: 43px;
+            border: 1px solid #e5e5e5;
+            font-size: 14px;
+            color: #666;
+            padding: 0 17px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            -webkit-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+        .form-control {
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+        }
+    </style>
+    {{--<link href="{{asset('css/theme.css')}}" rel="stylesheet" media="all">--}}
         <div class="text-center mt-4">'
+
             <h1 class="h2">Welcome to Sign Up</h1>
             <p class="lead">
                 Please fill out the information form below
@@ -74,6 +98,14 @@
             </div>
         </div>
     </main>
+
+
+
+
+
+
+
+
 @endsection
 
 
