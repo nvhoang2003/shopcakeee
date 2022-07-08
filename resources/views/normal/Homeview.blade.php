@@ -27,9 +27,9 @@
                 @foreach($event as $e)
                 <div class="categories__item">
                     <div class="categories__item__icon">
-                        <img src="{{asset("/storage/images/Category/".$e->image)}}" alt="" height="120" />
+                        <a href="{{route('Cake.Event',['eventid'=>$e->eventid])}}"><img src="{{asset("/storage/images/Category/".$e->image)}}" alt="" height="120" /></a>
                         <h5>{{$e->eventname}}</h5>
-                        <a type="button " class="btn btn-sm" style="background-color: #ff8000" href="{{route('Cake.Event',['eventid'=>$e->eventid])}}">Cake of event</a>
+{{--                        <a type="button " class="btn btn-sm" style="background-color: #ff8000" >Cake of event</a>--}}
                     </div>
                 </div>
                 @endforeach

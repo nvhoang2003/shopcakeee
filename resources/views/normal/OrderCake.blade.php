@@ -1244,9 +1244,7 @@
                         <span>
 
             </span>
-                        <button id="input_reset_19" type="reset" class="form-submit-reset jf-form-buttons" data-component="button">
-                            <a href="{{route('auth.home')}}" style="color: white ;"  >Back to Home</a>
-                        </button>
+                        <a type="button "  class="form-submit-reset" href="{{route('auth.home')}}" style="color: white ;">Back to Home</a>
                         <span>
 
             </span>
