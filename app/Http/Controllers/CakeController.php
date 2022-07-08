@@ -162,12 +162,17 @@ class CakeController extends Controller
     public function confirm($cakeid){
         $cake = CakeRepos::getCakeById($cakeid);
         $event= CategoryRepos::getEventByCakeId($cakeid);
-        return view('Cake.deleteCake',
-            [
-                'cake' => $cake[0],
-                'event'=>$event[0]
-            ]
-        );
+        if(isset($cake[0])){
+            return view('Cake.deleteCake',
+                [
+                    'cake' => $cake[0],
+                    'event'=>$event[0]
+                ]
+            );
+        } else {
+            return redirect()->action('CakeController@index');
+        }
+
     }
 
     public function destroy(Request $request, $cakeid)

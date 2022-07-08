@@ -77,7 +77,9 @@ class CakeRepos
         $sql= 'select c.*, e.eventname as event ';
         $sql .= 'from cake as c ';
         $sql .= 'join event as e on c.event= e.eventid ';
-        $sql .= 'where e.eventid = ?';
+        $sql .= 'where e.eventid = ? ';
+        $sql.='order by c.cakeid';
+
         return DB::select($sql, [$eventid]);
     }
 

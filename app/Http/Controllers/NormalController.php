@@ -30,23 +30,13 @@ class NormalController extends Controller
         ]);
     }
     public function CakeWithEvent($eventid){
-        $cake = CakeRepos::getAllCake();
-        foreach ($cake as $c){
-            if($c->event == $eventid){
-                $cake1= CakeRepos::getCakeByEventid($eventid);
-                $event = CategoryRepos::getEventById($eventid);
-                if(count($cake1)==0){
-                    return view('normal.CakeWithEvent',[
-                        'event'=>$event
-                    ]);
-                } else{
-                    return view('normal.CakeWithEvent',[
-                        'cake1'=>$cake1,
-                        'event'=>$event
-                    ]);
-                }
-            }
-        }
+        $cake = CakeRepos::getCakeByEventid($eventid);
+        $event = CategoryRepos::getEventById($eventid);
+        return view('normal.CakeWithEvent',[
+            'cake1' => $cake,
+            'event' => $event
+        ]);
+
     }
 
     public function search(request $request){

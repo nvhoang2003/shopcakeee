@@ -6,7 +6,7 @@
         <h1 class="display-4 text-center font-weight_bold ">Cake of {{$event[0]->eventname}} </h1>
         <table class="table table-borderless">
             <tbody>
-            @if(count($cake1) != 0)
+            @if(isset($cake1))
                 @php
                     $n=0;
                 @endphp
