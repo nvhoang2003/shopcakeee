@@ -18,7 +18,7 @@
     <meta name="HandheldFriendly" content="true" />
     <title>Holiday Cake Order Form</title>
     <link href="https://cdn01.jotfor.ms/static/formCss.css?3.3.34400" rel="stylesheet" type="text/css" />
-    <style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+{{--    <style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>--}}
     <link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/nova.css?3.3.34400" />
     <link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?themeRevisionID=5d713a7304e9ed3c13620001"/>
     <link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_feature.css?3.3.34400" />
@@ -604,9 +604,9 @@
             margin-top: auto;
             margin-top: initial;
         }
-        .ie-8 .form-all:before {
-            display: none;
-        }
+        /*.ie-8 .form-all:before {*/
+        /*    display: none;*/
+        /*}*/
         [data-type="control_clear"] {
             display: none;
         }
@@ -991,30 +991,30 @@
         .form-all {
             position: relative;
         }
-        .form-all:before {
-            content: "";
-            background-image: url("https://www.jotform.com/uploads/guest_5a4fccb40969b060/form_files/logocakeshop.62c14d628cd9e7.23969208.jpg");
-            display: inline-block;
-            height: 137.38317757009344px;
-            position: absolute;
-            background-size: 210px 137px;
-            background-repeat: no-repeat;
-            width: 100%;
-        }
+        /*.form-all:before {*/
+        /*    content: "";*/
+        /*    background-image: url("https://www.jotform.com/uploads/guest_5a4fccb40969b060/form_files/logocakeshop.62c14d628cd9e7.23969208.jpg");*/
+        /*    display: inline-block;*/
+        /*    height: 137.38317757009344px;*/
+        /*    position: absolute;*/
+        /*    background-size: 210px 137px;*/
+        /*    background-repeat: no-repeat;*/
+        /*    width: 100%;*/
+        /*}*/
         .form-all {
-            margin-top: 147px !important;
+            margin-top: 0px ;
         }
-        .form-all:before {
-            top: -147px;
-            background-position: top center;
-            left: 0;
-        }
+        /*.form-all:before {*/
+        /*    top: -147px;*/
+        /*    background-position: top center;*/
+        /*    left: 0;*/
+        /*}*/
 
-        .ie-8 .form-all:before { display: none; }
-        .ie-8 {
-            margin-top: auto;
-            margin-top: initial;
-        }
+        /*.ie-8 .form-all:before { display: none; }*/
+        /*.ie-8 {*/
+        /*    margin-top: auto;*/
+        /*    margin-top: initial;*/
+        /*}*/
 
         /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
 
@@ -1059,10 +1059,10 @@
     <input type="hidden" name="formID" value="221831661947461" />
     <input type="hidden" id="JWTContainer" value="" />
     <input type="hidden" id="cardinalOrderNumber" value="" />
-    <div role="main" class="form-all"  >
-        <div class="text-center">
+    <div class="form-all"  >
+{{--        <div class="text-center">--}}
 {{--            <img src="{{asset('/storage/images/logo/'.'logocakeshop.jpg')}}" alt="" height="200" width="200" class="img-fluid rounded-circle">--}}
-        </div>
+{{--        </div>--}}
         <ul class="form-section page-section">
             <li id="cid_32" class="form-input-wide" data-type="control_head">
                 <div class="form-header-group  header-large">
@@ -1244,9 +1244,9 @@
                         <span>
 
             </span>
-                        <div class="row">
-                            <a href="{{route('auth.home')}}">Back to Home</a>
-                        </div>
+                        <button id="input_reset_19" type="reset" class="form-submit-reset jf-form-buttons" data-component="button">
+                            <a href="{{route('auth.home')}}" style="color: white ;"  >Back to Home</a>
+                        </button>
                         <span>
 
             </span>
