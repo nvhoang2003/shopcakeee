@@ -1,7 +1,6 @@
 @extends('master.masterpage')
 
 @section('main')
-
     <div class="container">
         <h1 class="display-4 text-center font-weight_bold">Customer Index</h1>
         <div class="mr-5">

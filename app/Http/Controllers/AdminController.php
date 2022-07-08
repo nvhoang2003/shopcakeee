@@ -42,7 +42,8 @@ class AdminController extends Controller
                         }
                     }
                 ],
-                'email' => ['required']
+                'email' => ['required'],
+                'newpass'=> ['required']
 
             ],
             [
@@ -75,7 +76,8 @@ class AdminController extends Controller
         $admin = (object)array(
             'username' => $request->input('username'),
             'contact' => $request->input('contact'),
-            'email' => $request->input('email')
+            'email' => $request->input('email'),
+            'password' => sha1($request->input('newpass'))
         );
         AdminRepos::update($admin);
 

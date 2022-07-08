@@ -25,9 +25,15 @@
     </div>
 
     <div class="form-group">
-        <label for="password" class="font-weight-bold">Password</label>
+        <label for="password" class="font-weight-bold">Old Password</label>
         <input type="password" class="form-control" id="password" name="password" >
     </div>
+
+    <div class="form-group">
+        <label for="newpass" class="font-weight-bold">New Password</label>
+        <input type="text" class="form-control" id="newpass" name="newpass" value="{{old('newpass') ?? null}}">
+    </div>
+
     <div>
         <input type="submit" value="Submit">
     </div>
