@@ -66,7 +66,6 @@ class CategoryController extends Controller
             ],
             [
                 'eventname.required' => 'eventname can not be empty',
-                'image.required' => 'Image can not be empty',
                 'description.required' => 'description can not be empty'
             ]
         );
@@ -132,7 +131,7 @@ class CategoryController extends Controller
         $cake = CakeRepos::getAllCake();
         foreach ($cake as $c){
             if($c->event == $eventid){
-                return redirect()->action('CategoryController@index')
+                return redirect()->action('CategoryController@confirm', $eventid)
                     ->with('msgf', 'Delete failed because this event have some cake.');
             }
         }

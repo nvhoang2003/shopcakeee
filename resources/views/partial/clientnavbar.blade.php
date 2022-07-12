@@ -5,7 +5,7 @@
             <div class="col-lg-12">
                 <div class="row">
                     <div class="m-2">
-                        <a><img src="{{asset('/storage/images/logo/'.'logocakeshop.png')}}" alt="" height="60" width="90" >
+                        <a href="{{route('auth.home')}}"><img src="{{asset('/storage/images/logo/'.'logocakeshop.png')}}" alt="" height="60" width="90" >
                         </a>
                     </div>
                     <nav class="header__menu mobile-menu col-9">
